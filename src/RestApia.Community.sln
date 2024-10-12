@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApia.Shared", "RestApia.Shared\RestApia.Shared.csproj", "{352D8839-5095-4F79-A26E-2B65CCC7A8DA}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Extensions", "Extensions", "{8D1153B2-E8EA-4109-A020-B719B10160F4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApia.Extensions.Auth.Basic", "Extensions\RestApia.Extensions.Auth.Basic\RestApia.Extensions.Auth.Basic.csproj", "{95D3C125-F671-45A0-ABDD-866A8080F18C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestApia.Extensions.Auth.OAuth2", "Extensions\RestApia.Extensions.Auth.OAuth2\RestApia.Extensions.Auth.OAuth2.csproj", "{BBEA1B23-936B-4A19-9451-08EBFB69CBBC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{352D8839-5095-4F79-A26E-2B65CCC7A8DA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{352D8839-5095-4F79-A26E-2B65CCC7A8DA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{352D8839-5095-4F79-A26E-2B65CCC7A8DA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{352D8839-5095-4F79-A26E-2B65CCC7A8DA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95D3C125-F671-45A0-ABDD-866A8080F18C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95D3C125-F671-45A0-ABDD-866A8080F18C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95D3C125-F671-45A0-ABDD-866A8080F18C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95D3C125-F671-45A0-ABDD-866A8080F18C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBEA1B23-936B-4A19-9451-08EBFB69CBBC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBEA1B23-936B-4A19-9451-08EBFB69CBBC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBEA1B23-936B-4A19-9451-08EBFB69CBBC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBEA1B23-936B-4A19-9451-08EBFB69CBBC}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{95D3C125-F671-45A0-ABDD-866A8080F18C} = {8D1153B2-E8EA-4109-A020-B719B10160F4}
+		{BBEA1B23-936B-4A19-9451-08EBFB69CBBC} = {8D1153B2-E8EA-4109-A020-B719B10160F4}
+	EndGlobalSection
+EndGlobal

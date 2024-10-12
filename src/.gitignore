@@ -1,0 +1,20 @@
+# Common settings
+.vs/
+.vscode/
+.idea
+.nuke/temp/
+[Bb]in/
+[Oo]bj/
+packages/
+_ReSharper*/
+_dotCover*/
+node_modules/
+*.suo
+*.user
+*.sln.docstates
+riderModule.iml
+
+# local settings
+*.local.*
+.local/
+_temp/

@@ -1,0 +1,4 @@
+is_global = true
+
+dotnet_diagnostic.CA1014.severity = none
+dotnet_diagnostic.AD0001.severity = none # stylecop cannot handle records
