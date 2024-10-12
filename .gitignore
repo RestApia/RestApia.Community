@@ -2,7 +2,7 @@
 .vs/
 .vscode/
 .idea
-.nuke/temp/
+.nuke/
 [Bb]in/
 [Oo]bj/
 packages/
