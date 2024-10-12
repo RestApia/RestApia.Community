@@ -2,13 +2,14 @@
 
   <PropertyGroup>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <RepositoryUrl>https://github.com/RestApia/RestApia.Community</RepositoryUrl>
   </PropertyGroup>
 
-  <Target Name="PublishToLocal" AfterTargets="Pack">
+  <Target Name="PublishToLocal" AfterTargets="Pack" Condition="'$(Configuration)' == 'Debug'">
     <ItemGroup>
       <NuGetPackages Include="$(PackageOutputPath)*.nupkg"/>
     </ItemGroup>
     <Message Text="NuGetPackages: @(NuGetPackages)" Importance="high"/>
-    <Copy SourceFiles="@(NuGetPackages)" DestinationFolder="$(SolutionDir).local\nugets"/>
+    <Copy SourceFiles="@(NuGetPackages)" DestinationFolder="$(ProjectDir)..\..\.local\nugets"/>
   </Target>
 </Project>
