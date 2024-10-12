@@ -1,9 +1,14 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>net8.0</TargetFramework>
-    <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
   </PropertyGroup>
 
+  <Target Name="PublishToLocal" AfterTargets="Pack">
+    <ItemGroup>
+      <NuGetPackages Include="$(PackageOutputPath)*.nupkg"/>
+    </ItemGroup>
+    <Message Text="NuGetPackages: @(NuGetPackages)" Importance="high"/>
+    <Copy SourceFiles="@(NuGetPackages)" DestinationFolder="$(SolutionDir).local\nugets"/>
+  </Target>
 </Project>
