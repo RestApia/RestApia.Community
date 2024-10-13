@@ -34,7 +34,7 @@ public class Shared_Targets : NukeBuild
             );
         });
 
-    Target Shared_BuildProject => _ => _
+    Target Shared_Build => _ => _
         .DependsOn(Shared_Clear)
         .Executes(() =>
         {
@@ -49,8 +49,8 @@ public class Shared_Targets : NukeBuild
             );
         });
 
-    Target Shared_PushToFeed => _ => _
-        .DependsOn(Shared_BuildProject)
+    Target Shared_Push => _ => _
+        .DependsOn(Shared_Build)
         .Executes(() =>
         {
             var package = RootDirectory / ".local" / "nugets" / $"RestApia.Shared.{Version}.nupkg";

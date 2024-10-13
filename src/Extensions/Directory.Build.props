@@ -4,8 +4,6 @@
   <PropertyGroup>
     <GenerateAssemblyInfo>false</GenerateAssemblyInfo>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-    <RepositoryUrl>https://github.com/RestApia/RestApia.Community</RepositoryUrl>
-    <RepositoryType>git</RepositoryType>
   </PropertyGroup>
 
 </Project>

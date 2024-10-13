@@ -22,6 +22,7 @@ class Build : NukeBuild
 
         return group.ToLowerInvariant() switch {
             "shared" => Execute<Shared_Targets>(),
+            "extensions" => Execute<Extensions_Targets>(),
             _ => throw new Exception($"Unknown group: {group.ToLowerInvariant()}"),
         };
     }
