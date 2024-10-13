@@ -1,0 +1,9 @@
+{
+    "name": "RestApia.Extensions.Auth.Basic",
+    "version": "1.0.0",
+    "source": {
+        "repository": "https://github.com/RestApia/RestApia.Community.git",
+        "branch": "main",
+        "project": "src/Extensions/RestApia.Extensions.Auth.Basic/RestApia.Extensions.Auth.Basic.csproj"
+    }
+}
